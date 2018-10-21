@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.saurabhkolte.proto;
+
+message Person {
+    string identifier = 1;
+    string first_name = 2;
+    string middle_name = 3;
+    string last_name = 4;
+    string maiden_name = 5;
+    Gender gender = 6;
+}
+
+enum Gender {
+    MALE = 0;
+    FEMALE = 1;
+    OTHER = 2;
+}
